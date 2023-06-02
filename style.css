@@ -691,9 +691,10 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
   vertical-align: bottom;
   margin-bottom: 20px;
+  font-size: 0.9rem;
 }
 
 footer h3 {
@@ -896,19 +897,134 @@ footer p {
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .grid1 .rooms h1 {
-    font-size: 2rem;
-    margin-top: 30px;
+@media screen and (max-width: 1450px) {
+  .image-maison img {
+    height: 350px;
   }
-  .grid2 {
-    grid-template-columns: 50% 50%;
+  .textepres p {
+    font-size: 1rem;
   }
-  .text1 h1 {
-    font-size: 1.7rem;
-    grid-template-columns: 32% 7% 71%;
+  h2 {
+    font-weight: normal;
+    font-size: 0.9rem;
+  }
+  .etoile1 h6 {
+    font-weight: normal;
+  }
+  .etoile h6 {
+    font-weight: normal;
+  }
+  footer {
+    font-size: 0.8rem;
+    margin-top: 100px;
+  }
+  .photo-gallery {
+    margin-bottom: 10px;
+  }
+  .pres-container {
+    margin-bottom: 0px;
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 350px;
+  }
+  .grid2 {
+    padding-top: 50px;
+  }
+
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.9rem;
+  }
+  .grid1 .rooms h1 {
+    font-size: 1.8rem;
+  }
+
+  .title1 h1 {
+    font-size: 1.8rem;
+  }
+  .text2 h1 {
+    font-size: 1.8rem;
+  }
+  .text3 h1 {
+    font-size: 1.8rem;
+  }
+  .prix1 p {
+    font-size: 1.2rem;
+  }
+  .prix1 h3,
+  .prix2 h3,
+  .prix3 h3 {
+    font-size: 0.6rem;
+  }
+  .etoile1 {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .image-maison img {
+    height: 350px;
+  }
+  .textepres p {
+    font-size: 1rem;
+  }
+  .title1 h1 {
+    grid-template-columns: 28% 5% 71%;
+  }
+  .text2 h1 {
+    grid-template-columns: 35% 5% 5% 70%;
+  }
+  .text3 h1 {
+    grid-template-columns: 45% 5% 5% 52%;
+  }
+  .principalpic img {
+    width: 100%;
+    height: 500px;
+  }
+  footer {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .image-maison img {
+    height: 300px;
+  }
+  .textepres p {
+    font-size: 0.9rem;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 300px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.8rem;
+  }
+  .title1 h1 {
+    font-size: 1.6rem;
+  }
+  .text2 h1 {
+    font-size: 1.6rem;
+  }
+  .text3 h1 {
+    font-size: 1.6rem;
+  }
+  .prix1 h3,
+  .prix2 h3,
+  .prix3 h3 {
+    font-size: 0.5rem;
+  }
+}
+/*
 @media screen and (max-width: 1200px) {
   body {
     visibility: hidden;
@@ -926,4 +1042,4 @@ footer p {
     font-size: 13px;
     text-align: center;
   }
-}
+} */
