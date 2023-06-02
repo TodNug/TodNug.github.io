@@ -380,6 +380,17 @@ h2 {
     text-align: end;
     margin-right: 40px;
   }
+  .description h2 {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+  .texte1 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .etoile h6 {
+    font-weight: normal;
+  }
 }
 @media screen and (max-width: 480px) {
   .texte1 {
