@@ -32,20 +32,6 @@ allCross.forEach((element) => {
   });
 });
 
-// FAQ //
-
-grid1.addEventListener("click", () => {
-  window.open("chambre1.html", "_self");
-});
-
-grid2.addEventListener("click", () => {
-  window.open("chambre2.html", "_self");
-});
-
-grid3.addEventListener("click", () => {
-  window.open("chambre3.html", "_self");
-});
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -59,7 +45,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("principalpic");
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
