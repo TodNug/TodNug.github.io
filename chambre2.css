@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto:wght@400;700&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,7 @@ h1 {
 h2 {
   font-size: 1rem;
   color: #000000;
+  font-weight: 400;
 }
 .logo img {
   position: absolute;
@@ -31,7 +32,6 @@ h2 {
 .photosgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 300px;
   padding-top: 175px;
   padding-left: 60px;
   padding-right: 60px;
@@ -201,13 +201,41 @@ h2 {
   border-radius: 8px;
 }
 
-#footer {
+.reserve-btn a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
   position: absolute;
   left: 50%;
-  bottom: 0;
   transform: translateX(-50%);
-  margin: 0;
-  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-content: center;
+  height: auto;
+  width: 130px;
+  border-radius: 10px;
+  background-color: #bdbdbd;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reserve-btn a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 250px;
+  vertical-align: bottom;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 /*RESPONSIVE*/
@@ -252,9 +280,6 @@ h2 {
     margin-right: 10%;
     grid-gap: 20px;
     padding-bottom: 100px;
-  }
-  #footer {
-    display: none;
   }
   .texte1 {
     grid-template-columns: 24% 5% 5% 68%;
@@ -342,6 +367,11 @@ h2 {
   .prix {
     margin-top: -50px;
   }
+  .reserve-btn a {
+    font-size: 1.1rem;
+    width: 100px;
+    border-radius: 12px;
+  }
 }
 @media screen and (min-width: 1500px) {
   .text h2 {
@@ -374,7 +404,7 @@ h2 {
     text-align: end;
     margin-right: 40px;
   }
-  .description h2 {
+  .text h2 {
     font-size: 0.6rem;
     font-weight: 500;
   }
@@ -397,7 +427,7 @@ h2 {
     font-size: 0.6rem;
   }
   .texte1 h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .etoile h6 {
     text-align: end;
@@ -405,6 +435,9 @@ h2 {
   }
   .prix {
     margin-top: -60px;
+  }
+  footer {
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 430px) {
@@ -423,6 +456,9 @@ h2 {
 @media screen and (max-width: 380px) {
   .texte1 {
     grid-template-columns: 55% 9% 9% 15%;
+  }
+  footer {
+    font-size: 0.6rem;
   }
 }
 @media screen and (max-width: 350px) {

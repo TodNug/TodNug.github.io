@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Roboto:wght@400;700&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +46,6 @@ header {
   top: 80vh;
   transform: translateX(-50%);
   align-content: center;
-  cursor: pointer;
   height: auto;
   width: 130px;
   border-radius: 10px;
@@ -204,6 +203,7 @@ header {
   display: grid;
   font-size: 1rem;
   grid-area: description;
+  font-weight: 400;
 }
 
 .prix1 {
@@ -386,6 +386,7 @@ header {
   grid-area: description;
   display: grid;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .prix2 {
@@ -589,6 +590,7 @@ header {
   display: grid;
   grid-area: description;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .prix3 {
@@ -695,16 +697,19 @@ footer {
   vertical-align: bottom;
   margin-bottom: 20px;
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 footer h3 {
   display: flex;
   margin-right: 100px;
+  font-weight: 400;
 }
 
 footer p {
   display: flex;
   margin-left: 100px;
+  font-weight: 400;
 }
 
 .titre {
@@ -747,6 +752,7 @@ footer p {
   margin-left: 10px;
   padding: 15px 5px;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .visible-pannel img {
@@ -1101,8 +1107,12 @@ footer p {
 }
 
 @media screen and (max-width: 1000px) {
+  .entrybg img {
+    height: 400px;
+  }
+
   footer {
-    display: none;
+    font-size: 0.6rem;
   }
   .slideshow-container {
     margin-bottom: 100px;
