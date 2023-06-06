@@ -235,6 +235,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "ico";
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #icon3 {
@@ -392,7 +394,7 @@ header {
 .prix2 {
   display: grid;
   grid-area: prix;
-  grid-template-rows: 10% 90%;
+  grid-template-columns: 1% 99%;
 }
 
 .text2 p {
@@ -413,6 +415,7 @@ header {
 }
 
 .etoile1 {
+  display: grid;
   grid-area: etoile;
 }
 
@@ -425,6 +428,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "ico";
+  margin-top: auto;
+  margin-bottom: auto;
 }
 #icoon1 {
   grid-area: ico;
@@ -623,6 +628,8 @@ header {
   grid-area: icons;
   grid-template-columns: 1fr;
   grid-template-areas: "ico";
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #icon003 {
@@ -806,6 +813,7 @@ footer p {
   vertical-align: middle;
   height: 650px;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 /* Slideshow container */
@@ -981,9 +989,6 @@ footer p {
   .prix3 h3 {
     font-size: 0.6rem;
   }
-  .etoile1 {
-    margin-top: 5px;
-  }
 }
 
 @media screen and (max-width: 1210px) {
@@ -1046,6 +1051,9 @@ footer p {
   .prix3 h3 {
     font-size: 0.5rem;
   }
+  .etoile1 {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -1103,6 +1111,9 @@ footer p {
   }
   .visible-pannel h2 {
     font-size: 18px;
+  }
+  .text2 h3 {
+    padding-left: 30px;
   }
 }
 
@@ -1172,7 +1183,13 @@ footer p {
   }
 
   .text1 {
-    grid-template-rows: 15% 60% 10% 5%;
+    grid-template-rows: 15% 50% 20% 15%;
+  }
+  .text2 {
+    grid-template-rows: 15% 50% 15% 5% 15%;
+  }
+  .text3 {
+    grid-template-rows: 15% 50% 15% 5% 15%;
   }
 
   .visible-pannel h2 {
@@ -1180,6 +1197,19 @@ footer p {
   }
   .visible-pannel img {
     width: 16px;
+  }
+  .icons {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .etoile1 {
+    margin-top: 0px;
+  }
+  .etoile1 h6 {
+    font-size: 0.6rem;
+  }
+  .etoile h6 {
+    font-size: 0.6rem;
   }
 }
 
