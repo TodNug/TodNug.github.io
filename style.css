@@ -792,14 +792,13 @@ footer p {
   font-weight: bold;
   margin-top: 125px;
 }
-
 .mySlides {
   margin-top: 150px;
   display: none;
 }
 .mySlides img {
   vertical-align: middle;
-  height: 750px;
+  height: 650px;
   object-fit: cover;
 }
 
@@ -816,9 +815,9 @@ footer p {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: auto;
   padding: 16px;
-  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -867,7 +866,7 @@ footer p {
 
 @keyframes fade {
   from {
-    opacity: 0.7;
+    opacity: 0.8;
   }
   to {
     opacity: 1;
@@ -905,16 +904,6 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1450px) {
-  .principalpic img {
-    width: 100%;
-    height: 700px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-}
-
 @media screen and (max-width: 1450px) {
   .image-maison img {
     height: 350px;
@@ -941,6 +930,12 @@ footer p {
   }
   .pres-container {
     margin-bottom: 0px;
+  }
+  .mySlides img {
+    height: 550px;
+  }
+  .slideshow-container {
+    max-width: 800px;
   }
 }
 
@@ -1005,8 +1000,12 @@ footer p {
     width: 100%;
     height: 500px;
   }
-  footer {
-    margin-top: 10px;
+
+  .mySlides img {
+    height: 450px;
+  }
+  .slideshow-container {
+    max-width: 650px;
   }
 }
 
@@ -1044,6 +1043,10 @@ footer p {
 }
 
 @media screen and (max-width: 1070px) {
+  .part1 a {
+    font-size: 1.2rem;
+  }
+
   .pres-container {
     margin-top: 150px;
   }
@@ -1053,6 +1056,120 @@ footer p {
   }
   .textepres p {
     font-size: 0.8rem;
+  }
+
+  .grid1 .rooms h1 {
+    font-size: 1.6rem;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 250px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.7rem;
+  }
+  .title1 h1 {
+    font-size: 1.5rem;
+  }
+  .text2 h1 {
+    font-size: 1.5rem;
+  }
+  .text3 h1 {
+    font-size: 1.5rem;
+  }
+  .prix1 h3,
+  .prix2 h3,
+  .prix3 h3 {
+    font-size: 0.4rem;
+  }
+  .prix1 p,
+  .prix2 p,
+  .prix3 p {
+    font-size: 1rem;
+  }
+  .prix1 p,
+  .prix3 p {
+    font-size: 1rem;
+    padding-right: 80px;
+  }
+  .visible-pannel h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    display: none;
+  }
+  .slideshow-container {
+    margin-bottom: 100px;
+  }
+  .prev,
+  .next {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .title1 h1 {
+    font-size: 1.3rem;
+  }
+  .text2 h1 {
+    font-size: 1.3rem;
+  }
+  .text3 h1 {
+    font-size: 1.3rem;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.6rem;
+  }
+  #icons00,
+  #icons001,
+  #icons0,
+  #icons01,
+  #icons02,
+  #icons000,
+  #icons0001,
+  #icons0002 {
+    height: 20px;
+  }
+
+  #icon3,
+  #icon4,
+  #icon5,
+  #icon6,
+  #icon7,
+  #icon8,
+  #icon9,
+  #icoon1,
+  #icoon2,
+  #icoon3,
+  #icoon4,
+  #icoon5,
+  #icoon6,
+  #icoon7,
+  #icon003,
+  #icon004,
+  #icon005,
+  #icon006,
+  #icon007,
+  #icon008,
+  #icon009 {
+    height: 15px;
+  }
+
+  .text1 {
+    grid-template-rows: 15% 60% 10% 5%;
+  }
+
+  .visible-pannel h2 {
+    font-size: 16px;
+  }
+  .visible-pannel img {
+    width: 16px;
   }
 }
 

@@ -4,6 +4,20 @@ const grid1 = document.querySelector(".grid2");
 const grid2 = document.querySelector(".grid3");
 const grid3 = document.querySelector(".grid4");
 
+// Window opener //
+
+grid1.addEventListener("click", () => {
+  window.open("chambre1.html", "_self");
+});
+
+grid2.addEventListener("click", () => {
+  window.open("chambre2.html", "_self");
+});
+
+grid3.addEventListener("click", () => {
+  window.open("chambre3.html", "_self");
+});
+
 // FAQ //
 const allCross = document.querySelectorAll(".visible-pannel img");
 
