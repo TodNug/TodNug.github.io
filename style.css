@@ -1213,6 +1213,121 @@ footer p {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .entrybg img {
+    height: 350px;
+  }
+  .textepres p {
+    font-size: 0.7rem;
+  }
+  .image-maison img {
+    height: 200px;
+  }
+  .pres-container {
+    height: 0px;
+    margin-bottom: 300px;
+  }
+
+  .grid1 .rooms h1 {
+    font-size: 1.4rem;
+  }
+  .title1 h1 {
+    font-size: 1.2rem;
+  }
+  #icons00,
+  #icons001,
+  #icons0,
+  #icons01,
+  #icons02,
+  #icons000,
+  #icons0001,
+  #icons0002 {
+    height: 18px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.55rem;
+  }
+  .prix1 p,
+  .prix2 p,
+  .prix3 p {
+    font-size: 0.9rem;
+  }
+  #icon3,
+  #icon4,
+  #icon5,
+  #icon6,
+  #icon7,
+  #icon8,
+  #icon9,
+  #icoon1,
+  #icoon2,
+  #icoon3,
+  #icoon4,
+  #icoon5,
+  #icoon6,
+  #icoon7,
+  #icon003,
+  #icon004,
+  #icon005,
+  #icon006,
+  #icon007,
+  #icon008,
+  #icon009 {
+    height: 13px;
+  }
+  .text2 h1 {
+    font-size: 1.2rem;
+  }
+  .text3 h1 {
+    font-size: 1.2rem;
+  }
+  .titre {
+    font-size: 1.4rem;
+  }
+  .title10 p {
+    font-size: 1.4rem;
+  }
+  .visible-pannel h2 {
+    font-size: 14px;
+  }
+  .visible-pannel img {
+    width: 14px;
+  }
+  .mySlides img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .textepres p {
+    font-size: 0.6rem;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 230px;
+  }
+  .title1 h1 {
+    font-size: 1.1rem;
+  }
+  .text2 h1 {
+    font-size: 1.1rem;
+  }
+  .text3 h1 {
+    font-size: 1.1rem;
+  }
+  #icons00,
+  #icons001,
+  #icons0,
+  #icons01,
+  #icons02,
+  #icons000,
+  #icons0001,
+  #icons0002 {
+    height: 16px;
+  }
+}
 /*
 @media screen and (max-width: 1200px) {
   body {

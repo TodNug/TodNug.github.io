@@ -1,8 +1,13 @@
 const nav = document.querySelector("nav");
 
+const allCross = document.querySelectorAll(".visible-pannel img");
+
 const grid1 = document.querySelector(".grid2");
 const grid2 = document.querySelector(".grid3");
 const grid3 = document.querySelector(".grid4");
+
+var text1 = document.querySelector("#grid1Desc");
+var oldText1 = text1.innerHTML;
 
 // Window opener //
 
@@ -19,7 +24,6 @@ grid3.addEventListener("click", () => {
 });
 
 // FAQ //
-const allCross = document.querySelectorAll(".visible-pannel img");
 
 allCross.forEach((element) => {
   element.addEventListener("click", function () {
@@ -71,4 +75,17 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+}
+
+// RESPONSIVE //
+
+window.addEventListener("resize", resize);
+
+function resize() {
+  if (window.innerWidth < 800) {
+    text1.innerHTML =
+      "Chambre privative, avec salle de bain et toilettes indépendantes. <br> Une terrasse de 20m2 surplombant le jardin avec un escalier d’accès à votre place de parking réservée. <br> Un emplacement dans le vide sanitaire pour vos vélos, ainsi qu’un point de recharge...";
+  } else {
+    text1.innerHTML = oldText1;
+  }
 }
