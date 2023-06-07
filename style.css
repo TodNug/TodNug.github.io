@@ -878,6 +878,12 @@ footer p {
   animation-duration: 1.5s;
 }
 
+.after-icons,
+.after-icons2,
+.after-icons3 {
+  display: none;
+}
+
 @keyframes fade {
   from {
     opacity: 0.8;
@@ -1112,6 +1118,9 @@ footer p {
   .visible-pannel h2 {
     font-size: 18px;
   }
+  .toggle-pannel {
+    font-size: 0.9rem;
+  }
   .text2 h3 {
     padding-left: 30px;
   }
@@ -1197,6 +1206,9 @@ footer p {
   }
   .visible-pannel img {
     width: 16px;
+  }
+  .toggle-pannel {
+    font-size: 0.8rem;
   }
   .icons {
     margin-top: auto;
@@ -1295,6 +1307,9 @@ footer p {
   .visible-pannel img {
     width: 14px;
   }
+  .toggle-pannel {
+    font-size: 0.8rem;
+  }
   .mySlides img {
     height: 400px;
   }
@@ -1307,7 +1322,12 @@ footer p {
   .grid3,
   .grid4 {
     height: 230px;
+    padding-top: 200px;
   }
+  .grid2 {
+    padding-top: 100px;
+  }
+
   .title1 h1 {
     font-size: 1.1rem;
   }
@@ -1327,7 +1347,194 @@ footer p {
   #icons0002 {
     height: 16px;
   }
+  .prix1 {
+    padding-right: 50px;
+  }
+  .text1 {
+    grid-template-rows: 15% 65% 20%;
+  }
+  .text2 {
+    grid-template-rows: 15% 65% 15% 5%;
+  }
+  .text3 {
+    grid-template-rows: 15% 65% 15% 5%;
+  }
+  .icons,
+  .icons2,
+  .icons3 {
+    display: none;
+  }
+  .after-icons,
+  .after-icons2,
+  .after-icons3 {
+    margin-top: 50px;
+    padding-left: 24%;
+    padding-right: 24%;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .after-icons img,
+  .after-icons2 img,
+  .after-icons3 img {
+    height: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: solid 0.5px rgba(0, 0, 0, 0.308);
+  }
+  #icon3After {
+    border-left: none;
+  }
+  .separatest1,
+  .separatest2,
+  .separateur2 {
+    margin-top: 100px;
+  }
+  .container-faq {
+    min-width: 550px;
+  }
+  .visible-pannel h2 {
+    font-size: 13px;
+  }
+  .visible-pannel img {
+    width: 13px;
+  }
+  .slideshow-container {
+    max-width: 550px;
+  }
+  .mySlides {
+    margin-top: 100px;
+  }
+  footer {
+    font-size: 0.6rem;
+  }
+  footer p {
+    display: none;
+  }
+  footer h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+@media screen and (max-width: 770px) {
+  .presentation1 {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .image-maison {
+    order: 1;
+  }
+  .textepres {
+    order: 2;
+  }
+  .separateur {
+    margin-top: 120px;
+  }
+  .grid1 .rooms {
+    margin-top: 130px;
+  }
+  .image-maison img {
+    height: 230px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 200px;
+  }
+  .entrybg img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .part1 a {
+    font-size: 1rem;
+  }
+  .grid1 .rooms h1 {
+    font-size: 1.2rem;
+  }
+  .image-maison img {
+    height: 230px;
+    width: 500px;
+  }
+  .title1 h1,
+  .text2 h1,
+  .text3 h1 {
+    font-size: 1rem;
+  }
+  .title1 h1 {
+    grid-template-columns: 28% 6% 71%;
+  }
+  .text2 h1 {
+    grid-template-columns: 35% 6% 6% 70%;
+  }
+  .text3 h1 {
+    grid-template-columns: 45% 6% 6% 52%;
+  }
+  .after-icons img,
+  .after-icons2 img,
+  .after-icons3 img {
+    height: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .titre {
+    font-size: 1.2rem;
+  }
+  .title10 p {
+    font-size: 1.2rem;
+  }
+  .mySlides img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .entrybg img {
+    height: 250px;
+  }
+  .image-maison img {
+    height: 230px;
+    width: 450px;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: 170px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.5rem;
+  }
+  .title1 h1,
+  .text2 h1,
+  .text3 h1 {
+    font-size: 0.9rem;
+  }
+  .after-icons img,
+  .after-icons2 img,
+  .after-icons3 img {
+    height: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-faq {
+    min-width: 500px;
+  }
+  .visible-pannel h2 {
+    font-size: 12px;
+  }
+  .visible-pannel img {
+    width: 12px;
+  }
+  .slideshow-container {
+    max-width: 500px;
+  }
+}
+
 /*
 @media screen and (max-width: 1200px) {
   body {
