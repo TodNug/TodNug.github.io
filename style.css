@@ -135,9 +135,15 @@ header {
   height: 400px;
   grid-template-rows: 1fr;
   grid-template-columns: 40% 60%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 100px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 100px;
+  transition: ease-in-out 0.3s;
+}
+
+.grid2:hover {
+  background-color: #f1f1f17e;
+  border-radius: 15px;
 }
 
 .pic1 {
@@ -167,7 +173,7 @@ header {
     "description"
     "prix"
     "icons";
-  margin-left: 30px;
+  padding: 15px 30px 15px 30px;
   cursor: pointer;
 }
 
@@ -308,9 +314,15 @@ header {
   height: 400px;
   grid-template-rows: 1fr;
   grid-template-columns: 60% 40%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 200px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 200px;
+  transition: ease-in-out 0.3s;
+}
+
+.grid3:hover {
+  background-color: #f1f1f17e;
+  border-radius: 15px;
 }
 
 .pic2 {
@@ -343,7 +355,7 @@ header {
     "prix"
     "etoile"
     "icons";
-  margin-right: 30px;
+  padding: 15px 30px;
   cursor: pointer;
 }
 
@@ -506,9 +518,14 @@ header {
   height: 400px;
   grid-template-rows: 1fr;
   grid-template-columns: 40% 60%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 200px;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 200px;
+  transition: ease-in-out 0.3s;
+}
+.grid4:hover {
+  background-color: #f1f1f17e;
+  border-radius: 15px;
 }
 
 .pic3 {
@@ -540,7 +557,7 @@ header {
     "prix"
     "etoile"
     "icons";
-  margin-left: 30px;
+  padding: 15px 30px;
   cursor: pointer;
 }
 
@@ -766,7 +783,13 @@ footer p {
   margin-right: 15px;
   width: 20px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
+
+.visible-pannel img:hover {
+  transform: scale(1.2);
+}
+
 .toggle-pannel {
   padding: 0px 15px;
   height: 0px;
@@ -966,7 +989,7 @@ footer p {
     height: 350px;
   }
   .grid2 {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   .text1 h2,
@@ -1332,10 +1355,10 @@ footer p {
   .grid3,
   .grid4 {
     height: 230px;
-    padding-top: 200px;
+    margin-top: 200px;
   }
   .grid2 {
-    padding-top: 100px;
+    margin-top: 100px;
   }
 
   .title1 h1 {
