@@ -715,24 +715,19 @@ header {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   text-align: center;
-  margin-top: 150px;
-  vertical-align: bottom;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
   font-weight: 400;
+  margin: 250px 80px 35px 80px;
+}
+.ml, .contacts, .photos, .log{
+  display: flex;
 }
 
 footer h3 {
-  display: flex;
-  margin-right: 100px;
-  font-weight: 400;
-}
+  font-size: 0.9rem;
 
-footer p {
-  display: flex;
-  margin-left: 100px;
   font-weight: 400;
 }
 

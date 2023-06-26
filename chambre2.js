@@ -14,6 +14,12 @@ const toto12 = document.querySelector("#pic12");
 const next1 = document.querySelector("#nextbutt");
 const prev1 = document.querySelector("#prevbutt");
 
+const getback = document.querySelector("#backarrow");
+
+getback.addEventListener("click", () => {
+  history.go(-1);
+});
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
