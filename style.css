@@ -1790,6 +1790,10 @@ footer h3 {
   }
   .grid3 {
     margin-top: 200px;
+    height: 500px;
+  }
+  .grid4 {
+    height: 500px;
   }
   .pic2 {
     order: 1;
@@ -1804,10 +1808,10 @@ footer h3 {
       "etoile";
     padding: 0;
     order: 2;
-    height: 200px;
+    height: 250px;
   }
   .prix2 {
-    grid-template-columns: 1fr 24%;
+    grid-template-columns: 1fr 25%;
   }
   .text2 p {
     text-align: end;
@@ -1829,13 +1833,45 @@ footer h3 {
   }
   .text3 {
     display: grid;
-    grid-template-rows: 15% 60% 17% 13%;
+    grid-template-rows: 15% 60% 20% 5%;
     grid-template-areas:
       "title"
       "description"
       "prix"
       "etoile";
     padding: 0;
+    height: 250px;
+  }
+  .titre {
+    font-size: 1rem;
+  }
+  .title10 p {
+    font-size: 1rem;
+  }
+  .container-faq {
+    min-width: 312px;
+  }
+  .toggle-pannel {
+    font-size: 0.55rem;
+  }
+  .mySlides img {
     height: 200px;
+  }
+  .slideshow-container {
+    max-width: 315px;
+  }
+  .numbertext {
+    font-size: 9px;
+  }
+  footer {
+    font-size: 0.5rem;
+    margin: 100px 20px 30px 20px;
+  }
+  footer h3 {
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+  .log {
+    display: none;
   }
 }
