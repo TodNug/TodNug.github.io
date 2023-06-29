@@ -35,11 +35,19 @@ header {
   background-attachment: fixed;
 }
 
+#logo_noir {
+  display: none;
+}
+
+#mob-res {
+  display: none;
+}
+
 .part1 a {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   text-align: center;
-  transition: 0.2s;
+  transition: ease 0.4s;
   cursor: pointer;
   position: absolute;
   left: 50vw;
@@ -56,7 +64,7 @@ header {
 }
 
 .part1 a:hover {
-  background-color: #000000;
+  background-color: #111111;
   color: #fff;
 }
 
@@ -70,8 +78,8 @@ header {
 
 .pres-container {
   margin-top: 100px;
-  width: 80%;
-  margin-left: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   height: 450px;
   margin-bottom: 100px;
 }
@@ -177,7 +185,7 @@ header {
   cursor: pointer;
 }
 
-.text1 h1 {
+.title1 {
   display: grid;
   margin-top: auto;
   margin-bottom: auto;
@@ -359,7 +367,7 @@ header {
   cursor: pointer;
 }
 
-.text2 h1 {
+.title2 {
   display: grid;
   grid-area: title;
   grid-template-columns: 30% 5% 5% 70%;
@@ -561,7 +569,7 @@ header {
   cursor: pointer;
 }
 
-.text3 h1 {
+.title3 {
   display: grid;
   grid-template-columns: 38% 5% 5% 52%;
   grid-area: title;
@@ -721,7 +729,10 @@ footer {
   font-weight: 400;
   margin: 250px 80px 35px 80px;
 }
-.ml, .contacts, .photos, .log{
+.ml,
+.contacts,
+.photos,
+.log {
   display: flex;
 }
 
@@ -1691,23 +1702,140 @@ footer h3 {
     max-width: 400px;
   }
 }
-
-/*
-@media screen and (max-width: 1200px) {
-  body {
-    visibility: hidden;
-    overflow: hidden;
+@media screen and (max-width: 425px) {
+  header {
+    height: 7vh;
+    background: rgb(240, 240, 240);
+    border-bottom: #363636 solid 0.1px;
   }
-  .mobile-error-message {
-    position: absolute;
-    display: block;
-    visibility: visible;
-    top: 40vh;
-    left: 50vw;
-    transform: translateX(-50%);
+  #logo_blanc {
+    display: none;
   }
-  .mobile-error-message h1 {
-    font-size: 13px;
-    text-align: center;
+  #logo_noir {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    padding-top: auto;
+    padding-bottom: auto;
   }
-} */
+  .entrybg {
+    position: relative;
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+    margin: 0 10vw 0 5vw;
+  }
+  #mob-res {
+    display: flex;
+    color: #000000;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  #mob-res:hover {
+    text-decoration: underline;
+  }
+  .part1 {
+    display: none;
+  }
+  .pres-container {
+    margin-top: 70px;
+    margin-bottom: 250px;
+  }
+  .image-maison img {
+    height: 175px;
+    width: 280px;
+  }
+  .textepres {
+    display: flex;
+  }
+  .grid1 .rooms h1 {
+    font-size: 1rem;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 75px;
+    gap: 10px;
+  }
+  .text1 {
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix";
+    padding: 0 0 0 0;
+    height: 200px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    padding-top: 10px;
+  }
+  .prix1 {
+    padding-right: 0px;
+  }
+  .prix1 p,
+  .prix3 p {
+    padding-right: 70px;
+  }
+  .grid3 {
+    margin-top: 200px;
+  }
+  .pic2 {
+    order: 1;
+  }
+  .text2 {
+    display: grid;
+    grid-template-rows: 15% 60% 17% 13%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix"
+      "etoile";
+    padding: 0;
+    order: 2;
+    height: 200px;
+  }
+  .prix2 {
+    grid-template-columns: 1fr 24%;
+  }
+  .text2 p {
+    text-align: end;
+    padding-right: 0px;
+    padding-left: 100px;
+  }
+  .text2 h3 {
+    display: grid;
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  .etoile1 {
+    text-align: right;
+  }
+  .grid4 {
+    margin-top: 200px;
+  }
+  .text3 {
+    display: grid;
+    grid-template-rows: 15% 60% 17% 13%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix"
+      "etoile";
+    padding: 0;
+    height: 200px;
+  }
+}

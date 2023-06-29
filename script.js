@@ -81,22 +81,3 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
 }
-
-// RESPONSIVE //
-
-window.addEventListener("resize", resize);
-
-function resize() {
-  if (window.innerWidth < 800) {
-    text1.innerHTML =
-      "Chambre privative, avec salle de bain et toilettes indépendantes. <br> Une terrasse de 20m2 surplombant le jardin avec un escalier d’accès à votre place de parking réservée. <br> Un emplacement dans le vide sanitaire pour vos vélos, ainsi qu’un point de recharge...";
-    text2.innerHTML =
-      " Chambre privative de 16m2 avec mezzanine (1 lit double + 1 lit simple). <br> Possibilité d’accès extérieur donnant sur une terrasse ombragée. <br> Vue sur le jardin et les montagnes environnantes. <br> Salle de bain et toilettes communes...";
-    text3.innerHTML =
-      "Chambre privative de 12m2 avec mezzanine (1 lit double + 1 lit simple). <br>  Possibilité d’accès extérieur donnant sur une terrasse commune ombragée. <br> Vue sur le jardin et les montagnes environnantes. <br> Salle de bain et toilettes communes... ";
-  } else {
-    text1.innerHTML = oldText1;
-    text2.innerHTML = oldText2;
-    text3.innerHTML = oldText3;
-  }
-}

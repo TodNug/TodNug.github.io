@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Réservation</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="icon" href="IMG_6387 (1).png" type="image/icon type" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulaire de Réservation</title>
-  <link rel="stylesheet" href="form.css" />
-  <link rel="icon" href="IMG_6387 (1).png" type="image/icon type" />
-</head>
-
-<body>
-  <div class="logo">
-    <a href="index.html">
-      <img src="logo_black.png" alt="logo" />
-    </a>
-  </div>
-  <div class="container">
-    <form action="réservation" id="form1" onsubmit="sendEmail(); reset(); return false;">
-      <div class="after-submit">
-        <h2>Message envoyé !</h2>
-        <h4>Les informations nous ont bien été envoyés. Nous allons vous envoyer un message au plus vite !</h4>
+  <body>
+    <div class="logo">
+      <div class="arrow-back">
+        <img id="backarrow" src="arrow.png" alt="retour" />
       </div>
-      <div class="title">
-        <h1>Formulaire de réservation</h1>
-        <h4>
-          Pour réserver, vous pouvez nous appeler au 06 18 74 14 40, ou remplir
-          ce formulaire. Nous vous recontacterons au plus vite par message.
-        </h4>
-      </div>
-      <input type="text" id="name" placeholder="Votre nom" required />
-      <input type="email" id="email" placeholder="Votre mail" required />
-      <input type="text" id="phone" placeholder="Votre numéro de téléphone" required />
-      <div class="date">
-        <div class="date1">
-          <p>Du :</p>
-          <input type="date" id="date1" required />
+      <a href="index.html">
+        <img id="logo1" src="logo_black.png" alt="logo" />
+      </a>
+    </div>
+    <div class="container">
+      <form
+        action="réservation"
+        id="form1"
+        onsubmit="sendEmail(); reset(); return false;"
+      >
+        <div class="after-submit">
+          <h2>Message envoyé !</h2>
+          <h4>
+            Les informations nous ont bien été envoyés. Vous allez recevoir une
+            réponse au plus vite ! <br />
+          </h4>
+          <p>
+            *Les dates de réservation peuvent être déjà prises, dans quel cas
+            nous vous préviendront par message.
+          </p>
         </div>
-        <div class="date2">
-          <p id="date2text">Au :</p>
-          <input type="date" id="date2" required />
-          <h5>(jour du départ)</h5>
+        <div class="title">
+          <h1>Formulaire de réservation</h1>
+          <h4>
+            Pour réserver, vous pouvez nous appeler au 06 18 74 14 40, ou
+            remplir ce formulaire. Nous vous recontacterons au plus vite par
+            message.
+          </h4>
         </div>
-      </div>
-      <textarea id="message" rows="4" placeholder="Que désiriez vous ?"></textarea>
-      <button id="butt1" type="submit">Envoyer</button>
-    </form>
-  </div>
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script>
-    function sendEmail() {
-      Email.send({
-        SecureToken: "f42d4868-bd42-4e8d-b298-89eb32916ef5",
-        To: 'tokihi9499@peogi.com',
-        From: 'tokihi9499@peogi.com',
-        Subject: "Nouvelle Réservation !",
-        Body: "Nom : " + document.getElementById("name").value
-          + "<br> Email : " + document.getElementById("email").value
-          + "<br> Téléphone : " + document.getElementById("phone").value
-          + "<br> Date de réservation du : " + document.getElementById("date1").value
-          + "<br> jusqu'au : " + document.getElementById("date2").value
-          + "<br> <br> Message de " + document.getElementById("name").value
-          + " : " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script>
-  <script src="form.js"></script>
-</body>
-
+        <input type="text" id="name" placeholder="Votre nom" required />
+        <input type="email" id="email" placeholder="Votre mail" required />
+        <input
+          type="text"
+          id="phone"
+          placeholder="Votre numéro de téléphone"
+          required
+        />
+        <div class="date">
+          <div class="date1">
+            <p>Du :</p>
+            <input type="date" id="date1" required />
+          </div>
+          <div class="date2">
+            <p id="date2text">Au :</p>
+            <input type="date" id="date2" required />
+            <h5>(jour du départ)</h5>
+          </div>
+        </div>
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Que désiriez vous ?"
+        ></textarea>
+        <button id="butt1" type="submit">Envoyer</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="form.js"></script>
+  </body>
 </html>
