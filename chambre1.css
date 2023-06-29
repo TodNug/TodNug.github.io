@@ -37,7 +37,7 @@ h2 {
 }
 
 #backarrow {
-  margin-left: 100px;
+  margin-left: 10%;
   height: 30px;
   position: relative;
   cursor: pointer;
@@ -57,9 +57,7 @@ h2 {
 .photosgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin: 50px 10% 0 10%;
   column-gap: 10px;
 }
 
@@ -221,8 +219,8 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   align-content: center;
   height: auto;
   width: 130px;
@@ -400,6 +398,16 @@ footer {
   }
   .texte1 img {
     height: 22px;
+  }
+  #backarrow {
+    height: 20px;
+  }
+  .reserve-btn a {
+    font-size: 0.9rem;
+    width: 80px;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 @media screen and (max-width: 392px) {

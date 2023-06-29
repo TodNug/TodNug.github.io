@@ -27,9 +27,9 @@ form.addEventListener("submit", () => {
 
 function sendEmail() {
   Email.send({
-    SecureToken: "0189205d-81b8-429a-8e8e-cda90c16e446",
-    To: "yannlefebvre0@gmail.com",
-    From: "yannlefebvre0@gmail.com",
+    SecureToken: "c4013222-5fa5-4e0a-a3e8-5cc55d95b661",
+    To: "lechaletdelatouveille@gmail.com",
+    From: "lechaletdelatouveille@gmail.com",
     Subject: "Nouvelle Réservation !",
     Body:
       "Nom : " +
@@ -46,5 +46,5 @@ function sendEmail() {
       document.getElementById("name").value +
       " : " +
       document.getElementById("message").value,
-  });
+  }).then((message) => alert(message));
 }

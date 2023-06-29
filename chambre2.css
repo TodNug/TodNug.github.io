@@ -26,7 +26,6 @@ h2 {
   height: 135px;
 }
 
-
 #logo1 {
   position: absolute;
   height: 135px;
@@ -37,7 +36,7 @@ h2 {
 }
 
 #backarrow {
-  margin-left: 100px;
+  margin-left: 10%;
   height: 30px;
   position: relative;
   cursor: pointer;
@@ -57,9 +56,7 @@ h2 {
 .photosgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 175px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin: 50px 10% 0 10%;
   column-gap: 10px;
 }
 
@@ -463,6 +460,16 @@ footer {
   }
   footer {
     font-size: 0.7rem;
+  }
+  #backarrow {
+    height: 20px;
+  }
+  .reserve-btn a {
+    font-size: 0.9rem;
+    width: 80px;
+    border-radius: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 @media screen and (max-width: 430px) {

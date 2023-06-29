@@ -1733,10 +1733,14 @@ footer h3 {
     display: flex;
     color: #000000;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    font-weight: 200;
   }
-  #mob-res:hover {
-    text-decoration: underline;
+  #mob-res span {
+    padding: 4px;
+    border: solid 0.1px rgb(92, 92, 92);
+    border-radius: 25px;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
   }
   .part1 {
     display: none;
@@ -1765,6 +1769,10 @@ footer h3 {
     margin-right: 15%;
     margin-top: 75px;
     gap: 10px;
+  }
+  .etoile1,
+  .etoile {
+    margin-top: -15px;
   }
   .text1 {
     display: grid;
@@ -1811,7 +1819,7 @@ footer h3 {
     height: 250px;
   }
   .prix2 {
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: 1fr 28%;
   }
   .text2 p {
     text-align: end;
