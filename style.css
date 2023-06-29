@@ -1865,7 +1865,23 @@ footer h3 {
   }
   footer {
     font-size: 0.5rem;
-    margin: 100px 20px 30px 20px;
+    margin: 100px 0px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(240, 240, 240);
+  }
+  .ml {
+    text-align: center;
+    justify-content: center;
+    order: 3;
+  }
+  .contacts {
+    order: 1;
+  }
+  .photos {
+    order: 2;
   }
   footer h3 {
     font-size: 0.5rem;
