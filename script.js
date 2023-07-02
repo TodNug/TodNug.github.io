@@ -17,15 +17,15 @@ console.log(text2);
 // Window opener //
 
 grid1.addEventListener("click", () => {
-  window.open("chambre1.html", "_self");
+  window.open("le_frejo", "_self");
 });
 
 grid2.addEventListener("click", () => {
-  window.open("chambre2.html", "_self");
+  window.open("le_rivage", "_self");
 });
 
 grid3.addEventListener("click", () => {
-  window.open("chambre3.html", "_self");
+  window.open("le_cabanis", "_self");
 });
 
 // FAQ //
