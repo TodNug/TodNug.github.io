@@ -1053,6 +1053,35 @@ footer h3 {
   .slideshow-container {
     max-width: 650px;
   }
+  footer {
+    font-size: 0.7rem;
+    margin: 100px 0px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(240, 240, 240);
+  }
+  .ml {
+    text-align: center;
+    justify-content: center;
+    order: 3;
+  }
+  .contacts {
+    order: 1;
+    justify-content: center;
+  }
+  .photos {
+    order: 2;
+    justify-content: center;
+  }
+  footer h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .log {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1130px) {
@@ -1221,13 +1250,16 @@ footer h3 {
   }
 
   .text1 {
-    grid-template-rows: 15% 50% 20% 15%;
+    grid-template-rows: 15% 60% 15% 10%;
+    padding: 15px 30px 0px 30px;
   }
   .text2 {
-    grid-template-rows: 15% 50% 15% 5% 15%;
+    grid-template-rows: 15% 55% 15% 5% 10%;
+    padding: 15px 30px 0px 30px;
   }
   .text3 {
     grid-template-rows: 15% 50% 15% 5% 15%;
+    padding: 15px 30px 0px 30px;
   }
 
   .visible-pannel h2 {
@@ -1430,7 +1462,7 @@ footer h3 {
     margin-top: 100px;
   }
   .container-faq {
-    min-width: 550px;
+    min-width: 600px;
   }
   .visible-pannel h2 {
     font-size: 13px;
@@ -1592,6 +1624,9 @@ footer h3 {
   .prix3 h3 {
     font-size: 0.35rem;
   }
+  .mySlides img {
+    height: 330px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1702,6 +1737,298 @@ footer h3 {
     max-width: 400px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 7vh;
+    background: rgb(240, 240, 240);
+    border-bottom: #363636 solid 0.1px;
+  }
+  #logo_blanc {
+    display: none;
+  }
+  #logo_noir {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  .entrybg {
+    position: relative;
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+    margin: 0 10vw 0 5vw;
+  }
+  #mob-res {
+    display: flex;
+    color: #000000;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+  #mob-res span {
+    padding: 8px;
+    border: solid 0.1px rgb(92, 92, 92);
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+  }
+  .part1 {
+    display: none;
+  }
+  .pres-container {
+    margin-top: 70px;
+    margin-bottom: 450px;
+  }
+  .image-maison img {
+    height: 300px;
+    width: 450px;
+  }
+  .textepres {
+    display: flex;
+  }
+  .grid1 .rooms h1 {
+    font-size: 1.4rem;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 125px;
+    gap: 10px;
+  }
+  .grid2:hover,
+  .grid3:hover,
+  .grid4:hover {
+    background-color: #ffffff;
+  }
+  .etoile1,
+  .etoile {
+    margin-top: -15px;
+  }
+  .text1 {
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix";
+    padding: 0 0 0 0;
+    height: 200px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    padding-top: 10px;
+  }
+  .prix1 {
+    padding-right: 0px;
+  }
+  .prix1 p,
+  .prix3 p {
+    padding-right: 80px;
+  }
+  .grid3 {
+    margin-top: 200px;
+    height: 600px;
+  }
+  .grid4 {
+    height: 600px;
+  }
+  .pic2 {
+    order: 1;
+  }
+  .text2 {
+    display: grid;
+    grid-template-rows: 15% 60% 17% 13%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix"
+      "etoile";
+    padding: 0;
+    order: 2;
+    height: 250px;
+  }
+  .title1 {
+    grid-template-columns: 16% 4% 71%;
+  }
+  .title2 {
+    grid-template-columns: 20% 4% 4% 1fr;
+  }
+  .title3 {
+    grid-template-columns: 25% 4% 4% 1fr;
+  }
+  .prix2 {
+    grid-template-columns: 1fr 16%;
+  }
+  .text2 p {
+    text-align: end;
+    padding-right: 0px;
+    padding-left: 100px;
+  }
+  .text2 h3 {
+    display: grid;
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+  .etoile1 {
+    text-align: right;
+  }
+  .grid4 {
+    margin-top: 200px;
+  }
+  .text3 {
+    display: grid;
+    grid-template-rows: 15% 60% 20% 5%;
+    grid-template-areas:
+      "title"
+      "description"
+      "prix"
+      "etoile";
+    padding: 0;
+    height: 250px;
+  }
+  .titre {
+    font-size: 1.4rem;
+  }
+  .title10 p {
+    font-size: 1.4rem;
+  }
+  .container-faq {
+    min-width: 550px;
+  }
+  .toggle-pannel {
+    font-size: 0.7rem;
+  }
+  .mySlides img {
+    height: 400px;
+  }
+  .slideshow-container {
+    max-width: 550px;
+  }
+  .numbertext {
+    font-size: 11px;
+  }
+  footer {
+    font-size: 0.6rem;
+    margin: 100px 0px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(240, 240, 240);
+  }
+  .ml {
+    text-align: center;
+    justify-content: center;
+    order: 3;
+  }
+  .contacts {
+    order: 1;
+  }
+  .photos {
+    order: 2;
+  }
+  footer h3 {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  .log {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #mob-res {
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+  .image-maison img {
+    height: 250px;
+    width: 400px;
+  }
+
+  .pres-container {
+    margin-bottom: 350px;
+  }
+
+  .mySlides img {
+    height: 330px;
+  }
+  .slideshow-container {
+    max-width: 450px;
+  }
+  .after-icons,
+  .after-icons2,
+  .after-icons3 {
+    margin-top: 0px;
+  }
+  .grid2,
+  .grid3,
+  .grid4 {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .text1 {
+    grid-template-rows: 15% 55% 30%;
+    height: 200px;
+  }
+  .text2 {
+    grid-template-rows: 15% 60% 17% 13%;
+    height: 200px;
+  }
+  .text3 {
+    grid-template-rows: 15% 60% 20% 5%;
+    height: 200px;
+  }
+  .prix2 {
+    grid-template-columns: 1fr 20%;
+  }
+  .etoile1,
+  .etoile {
+    margin-top: 0px;
+  }
+  .container-faq {
+    min-width: 480px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title1 {
+    grid-template-columns: 20% 5% 1fr;
+  }
+  .title2 {
+    grid-template-columns: 25% 5% 5% 1fr;
+  }
+  .title3 {
+    grid-template-columns: 30% 5% 5% 1fr;
+  }
+  .prix2 {
+    grid-template-columns: 1fr 24%;
+  }
+  .container-faq {
+    min-width: 380px;
+  }
+  .mySlides img {
+    height: 280px;
+  }
+  .slideshow-container {
+    max-width: 380px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   header {
     height: 7vh;
@@ -1796,12 +2123,15 @@ footer h3 {
   .prix3 p {
     padding-right: 70px;
   }
+  .grid2 {
+    margin-bottom: 5px;
+  }
   .grid3 {
     margin-top: 200px;
-    height: 500px;
+    height: 400px;
   }
   .grid4 {
-    height: 500px;
+    height: 400px;
   }
   .pic2 {
     order: 1;
@@ -1850,6 +2180,15 @@ footer h3 {
     padding: 0;
     height: 250px;
   }
+  .title1 {
+    grid-template-columns: 24% 5% 1fr;
+  }
+  .title2 {
+    grid-template-columns: 30% 5% 5% 1fr;
+  }
+  .title3 {
+    grid-template-columns: 36% 5% 5% 1fr;
+  }
   .titre {
     font-size: 1rem;
   }
@@ -1857,7 +2196,10 @@ footer h3 {
     font-size: 1rem;
   }
   .container-faq {
-    min-width: 312px;
+    min-width: 325px;
+  }
+  .visible-pannel h2 {
+    font-size: 9px;
   }
   .toggle-pannel {
     font-size: 0.55rem;
@@ -1897,5 +2239,94 @@ footer h3 {
   }
   .log {
     display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .image-maison img {
+    height: 150px;
+    width: 245px;
+  }
+  .textepres p {
+    font-size: 0.45rem;
+  }
+  .presentation1 {
+    row-gap: 30px;
+  }
+  .pres-container {
+    margin-bottom: 180px;
+  }
+  .grid1 .rooms h1 {
+    font-size: 0.9rem;
+  }
+  .grid2 {
+    margin-top: 60px;
+  }
+  .grid1 .rooms {
+    margin-top: 120px;
+  }
+  .text1 h2,
+  .text2 h2,
+  .text3 h2 {
+    font-size: 0.45rem;
+  }
+  .after-icons,
+  .after-icons2,
+  .after-icons3 {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .after-icons img,
+  .after-icons2 img,
+  .after-icons3 img {
+    height: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .titre {
+    font-size: 0.9rem;
+  }
+  .container-faq {
+    min-width: 300px;
+  }
+  .visible-pannel h2 {
+    font-size: 8px;
+  }
+  .toggle-pannel {
+    font-size: 0.5rem;
+  }
+  .title10 p {
+    font-size: 0.9rem;
+  }
+  .mySlides {
+    margin-top: 65px;
+  }
+  .mySlides img {
+    height: 180px;
+  }
+  .slideshow-container {
+    max-width: 295px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title1 {
+    grid-template-columns: 25% 7% 1fr;
+  }
+  .title2 {
+    grid-template-columns: 33% 7% 7% 1fr;
+  }
+  .prix2 {
+    grid-template-columns: 1fr 32%;
+  }
+  .title3 {
+    grid-template-columns: 39% 7% 7% 1fr;
+  }
+  .container-faq {
+    min-width: 265px;
+  }
+  .mySlides img {
+    height: 160px;
+  }
+  .slideshow-container {
+    max-width: 265px;
   }
 }

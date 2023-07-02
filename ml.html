@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Réservation</title>
+    <link rel="stylesheet" href="ml.css" />
+    <link rel="icon" href="IMG_6387 (1).png" type="image/icon type" />
+  </head>
+
+  <body>
+    <div class="logo">
+      <div class="arrow-back">
+        <img id="backarrow" src="arrow.png" alt="retour" />
+      </div>
+      <a href="index.html">
+        <img id="logo1" src="logo_black.png" alt="logo" />
+      </a>
+    </div>
+    <div class="zdt">
+      <h2>Mentions Légales</h2>
+      <div class="pt0">
+        <h5>Siège sociale :</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="pt1">
+        <h5>Contacts :</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+          incidunt eius voluptate.
+        </p>
+      </div>
+      <div class="pt2">
+        <h5>Représentant légales :</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          doloribus!
+        </p>
+      </div>
+      <div class="pt3">
+        <h5>Hébergeur du site :</h5>
+        <p>Namecheap</p>
+      </div>
+    </div>
+    <script>
+      const getback = document.querySelector("#backarrow");
+
+      getback.addEventListener("click", () => {
+        history.go(-1);
+      });
+    </script>
+  </body>
+</html>

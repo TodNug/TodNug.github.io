@@ -260,6 +260,11 @@ footer {
 }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 1450px) {
+  .texte1 {
+    grid-template-columns: 42% 5% 5% 1fr;
+  }
+}
 
 @media screen and (max-width: 1280px) {
   .photosgrid {
