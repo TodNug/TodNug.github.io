@@ -992,7 +992,7 @@ footer h3 {
   .grid2,
   .grid3,
   .grid4 {
-    height: 350px;
+    height: auto;
   }
   .grid2 {
     margin-top: 50px;

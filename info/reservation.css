@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(223, 208, 208);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 15px;
+  height: 135px;
+}
+
+#logo1 {
+  position: absolute;
+  height: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  margin-left: 0;
+}
+
+#backarrow {
+  margin-left: 10%;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow-back {
+  margin-top: 25px;
+  width: 100%;
+  height: 20px;
+}
+
+.arrow-back img {
+  margin-left: 150px;
+  height: 35px;
+}
+.titre {
+  text-align: center;
+  margin-top: 50px;
+}
+.contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.title {
+  white-space: nowrap;
+  padding: 20px 30px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: start;
+}
+.title h3 {
+  font-size: 1rem;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
+article {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-self: start;
+}
+
+article p {
+  padding-bottom: 20px;
+}
+
+#msg {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+article p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
