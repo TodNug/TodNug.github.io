@@ -8,6 +8,7 @@ const texta = document.querySelector("textarea");
 const confirm = document.querySelector(".after-submit");
 const form = document.querySelector("#form1");
 const getback = document.querySelector("#backarrow");
+const email = document.querySelector("#email");
 
 getback.addEventListener("click", () => {
   history.go(-1);

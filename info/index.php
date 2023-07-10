@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if(!empty($_POST)){
 
   if(isset($_POST["nom"], $_POST["email"], $_POST["phone"], $_POST["date1"], $_POST["date2"], $_POST["message"])
@@ -6,8 +8,10 @@ if(!empty($_POST)){
       ){
       $nom = strip_tags($_POST["nom"]);
 
+      $_SESSION["error"] = [];
+
       if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-        die("L'adresse Email est incorrecte");
+        die ("L'adresse email n'est pas valide !");
       }
 
       $phone = strip_tags($_POST["phone"]);
@@ -18,8 +22,6 @@ if(!empty($_POST)){
       $message = strip_tags($_POST["message"]);
 
       require_once "connect.php";
-
-      session_start();
 
       $sql = "INSERT INTO `infos_clients`(`nom`, `mail`, `phone`, `date1`, `date2`, `message`) VALUES (:nom, :email, :phone, :date1, :date2, :message )";
 
@@ -40,10 +42,6 @@ if(!empty($_POST)){
       $query->execute();
 
       
-      }
-
-      else{
-        die("Erreur");
       }
 
 }
@@ -119,7 +117,7 @@ if(!empty($_POST)){
           rows="4"
           placeholder="Que désiriez vous ?"
         ></textarea>
-        <button id="butt1" type="submit">Envoyer</button>
+        <button id = "click" type="submit">Envoyer</button>
       </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"

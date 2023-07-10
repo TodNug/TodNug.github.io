@@ -184,6 +184,9 @@ textarea,
   form {
     padding: 2vw 6vw;
   }
+  .after-submit p {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -218,10 +221,23 @@ textarea,
   #backarrow {
     height: 20px;
   }
+  .after-submit p {
+    font-size: 0.55rem;
+  }
 }
+
+.error p {
+  padding-left: 20px;
+  background-color: #ff000072;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 420px) {
   .date h5 {
     font-weight: 400;
     font-size: 7px;
+  }
+  .after-submit p {
+    font-size: 0.5rem;
   }
 }

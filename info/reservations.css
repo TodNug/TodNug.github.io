@@ -91,7 +91,7 @@ a {
 article a:hover {
   background-color: rgb(215, 215, 215);
 }
-article:last-of-type {
+article:last-of-type a {
   border-radius: 0 0 10px 10px;
 }
 article a:last-child {
