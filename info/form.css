@@ -11,6 +11,25 @@ body {
   background-color: rgb(223, 208, 208);
   max-width: 100%;
   overflow-x: hidden;
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .logo {
@@ -102,12 +121,6 @@ form button {
   width: 150px;
   margin: 20px auto 0;
   border-radius: 30px;
-  transition: ease-in-out 0.2s;
-}
-
-form button:hover {
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
 }
 
 form textarea {
@@ -152,9 +165,7 @@ textarea,
 .after-submit {
   display: none;
 }
-.after-submit h2 {
-  text-align: center;
-}
+
 .after-submit h4 {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -183,9 +194,6 @@ textarea,
   }
   form {
     padding: 2vw 6vw;
-  }
-  .after-submit p {
-    font-size: 0.6rem;
   }
 }
 
@@ -221,23 +229,10 @@ textarea,
   #backarrow {
     height: 20px;
   }
-  .after-submit p {
-    font-size: 0.55rem;
-  }
 }
-
-.error p {
-  padding-left: 20px;
-  background-color: #ff000072;
-  border-radius: 5px;
-}
-
 @media screen and (max-width: 420px) {
   .date h5 {
     font-weight: 400;
     font-size: 7px;
-  }
-  .after-submit p {
-    font-size: 0.5rem;
   }
 }

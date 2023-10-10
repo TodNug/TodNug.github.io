@@ -9,8 +9,15 @@ const confirm = document.querySelector(".after-submit");
 const form = document.querySelector("#form1");
 const getback = document.querySelector("#backarrow");
 const email = document.querySelector("#email");
+const logo = document.getElementById("logo1");
+
+logo.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/", "_self");
+});
 
 getback.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
   history.go(-1);
 });
 

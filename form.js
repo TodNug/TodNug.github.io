@@ -8,8 +8,15 @@ const texta = document.querySelector("textarea");
 const confirm = document.querySelector(".after-submit");
 const form = document.querySelector("#form1");
 const getback = document.querySelector("#backarrow");
+const logo = document.getElementById("logo1");
+
+logo.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/", "_self");
+});
 
 getback.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
   history.go(-1);
 });
 
@@ -24,27 +31,3 @@ form.addEventListener("submit", () => {
   confirm.style.display = "block";
   confirm.style.marginTop = "10px";
 });
-
-function sendEmail() {
-  Email.send({
-    SecureToken: "c4013222-5fa5-4e0a-a3e8-5cc55d95b661",
-    To: "lechaletdelatouveille@gmail.com",
-    From: "lechaletdelatouveille@gmail.com",
-    Subject: "Nouvelle Réservation !",
-    Body:
-      "Nom : " +
-      document.getElementById("name").value +
-      "<br> Email : " +
-      document.getElementById("email").value +
-      "<br> Téléphone : " +
-      document.getElementById("phone").value +
-      "<br> Date de réservation du : " +
-      document.getElementById("date1").value +
-      "<br> jusqu'au : " +
-      document.getElementById("date2").value +
-      "<br> <br> Message de " +
-      document.getElementById("name").value +
-      " : " +
-      document.getElementById("message").value,
-  }).then((message) => alert(message));
-}

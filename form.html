@@ -14,16 +14,12 @@
       <div class="arrow-back">
         <img id="backarrow" src="arrow.png" alt="retour" />
       </div>
-      <a href="/">
+      <a>
         <img id="logo1" src="logo_black.png" alt="logo" />
       </a>
     </div>
     <div class="container">
-      <form
-        action="réservation"
-        id="form1"
-        onsubmit="sendEmail(); reset(); return false;"
-      >
+      <form id="form1">
         <div class="after-submit">
           <h2>Message envoyé !</h2>
           <h4>
@@ -43,22 +39,17 @@
             message.
           </h4>
         </div>
-        <input type="text" id="name" placeholder="Votre nom" required />
-        <input type="email" id="email" placeholder="Votre mail" required />
-        <input
-          type="text"
-          id="phone"
-          placeholder="Votre numéro de téléphone"
-          required
-        />
+        <input type="text" id="name" placeholder="Votre nom" />
+        <input type="email" id="email" placeholder="Votre mail" />
+        <input type="text" id="phone" placeholder="Votre numéro de téléphone" />
         <div class="date">
           <div class="date1">
             <p>Du :</p>
-            <input type="date" id="date1" required />
+            <input type="date" id="date1" />
           </div>
           <div class="date2">
             <p id="date2text">Au :</p>
-            <input type="date" id="date2" required />
+            <input type="date" id="date2" />
             <h5>(jour du départ)</h5>
           </div>
         </div>
@@ -67,10 +58,9 @@
           rows="4"
           placeholder="Que désiriez vous ?"
         ></textarea>
-        <button id="butt1" type="submit">Envoyer</button>
+        <button id="butt1">Envoyer</button>
       </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="form.js"></script>
   </body>
 </html>

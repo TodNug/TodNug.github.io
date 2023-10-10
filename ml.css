@@ -13,6 +13,22 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  animation: onLoad 0.75s;
+}
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+    transform: rotateX("-10deg");
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX("0");
+  }
+}
+
 .logo {
   width: 100%;
   margin-top: 15px;
@@ -49,8 +65,13 @@ body {
 .zdt {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
+  gap: 30px;
+  margin: 50px 10% 100px 10%;
+}
+
+.pt0,
+.pt1,
+.pt2,
+.pt3 {
+  margin-left: 2%;
 }

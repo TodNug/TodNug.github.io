@@ -20,6 +20,38 @@ h2 {
   color: #000000;
   font-weight: 400;
 }
+
+body {
+  animation: onLoad 0.75s;
+}
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loadOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .logo {
   width: 100%;
   margin-top: 15px;
@@ -231,7 +263,7 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 100px;
   align-content: center;
   height: auto;
@@ -244,8 +276,8 @@ h2 {
 }
 
 .reserve-btn a:hover {
-  background-color: #000000;
-  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translate(-50%) scale(1.05);
 }
 
 footer {

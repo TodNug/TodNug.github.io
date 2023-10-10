@@ -16,8 +16,25 @@ const prev1 = document.querySelector("#prevbutt");
 
 const getback = document.querySelector("#backarrow");
 
+const logo = document.getElementById("logo1");
+
+const rsv = document.getElementById("RSV");
+
+rsv.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/info/", "_self");
+});
+
+logo.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/", "_self");
+});
+
 getback.addEventListener("click", () => {
-  history.go(-1);
+  document.body.style.animation = "zoomOut 500ms forwards";
+  setTimeout(function () {
+    history.go(-1);
+  }, 500);
 });
 
 let slideIndex = 1;

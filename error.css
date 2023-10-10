@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+  animation: zoomIn 500ms forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  70% {
+    opacity: 1;
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes loadOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #000000;
+}
+
+#logo1 {
+  position: absolute;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  margin-left: 0;
+  opacity: 0.05;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 230px;
+}
+
+.error h2 {
+  font-size: 4rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.error h1 {
+  font-size: 7rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.error p {
+  margin-top: 50px;
+  font-size: 1.3rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}

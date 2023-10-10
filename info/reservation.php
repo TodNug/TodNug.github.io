@@ -52,7 +52,7 @@ $titre = strip_tags($reservation["nom"]);
         <img id="backarrow" src="../arrow.png" alt="retour" />
       </div>
       <a href="/">
-        <img id="logo1" src="../logo_black.png" alt="logo" />
+        <img id="logo1" src="../logo_black.webp" alt="logo" />
       </a>
     </div>
     <div class="titre">

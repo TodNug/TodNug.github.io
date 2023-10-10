@@ -6,26 +6,71 @@ const grid1 = document.querySelector(".grid2");
 const grid2 = document.querySelector(".grid3");
 const grid3 = document.querySelector(".grid4");
 
-var text1 = document.querySelector("#grid1Desc");
-var oldText1 = text1.innerHTML;
-var text2 = document.querySelector("#grid2Desc");
-var oldText2 = text2.innerHTML;
-var text3 = document.querySelector("#grid3Desc");
-var oldText3 = text3.innerHTML;
+const loader = document.querySelector(".loader");
+const bar = document.querySelector(".bar");
+const ldrLogo = document.getElementById("ldrLogo");
+const barCtn = document.querySelector(".bar-ctn");
+const btn1 = document.getElementById("button1");
+const btn1Mbl = document.getElementById("mob-res");
 
-console.log(text2);
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (lastScrollY < window.scrollY) {
+    document.getElementById("animArrow").style.opacity = "0";
+    document.getElementById("animArrow1").style.opacity = "0";
+  }
+});
+
+if (sessionStorage.getItem("load") === "off") {
+  loader.style.display = "none";
+  document.body.style.animation = "none";
+}
+
+window.addEventListener("load", () => {
+  bar.style.animation = "none";
+  bar.style.width = "100%";
+  setTimeout(function () {
+    bar.style.width = "100%";
+    ldrLogo.style.transform = "translateY(-100%)";
+    ldrLogo.style.opacity = "0";
+    barCtn.style.opacity = "0";
+  }, 400);
+  setTimeout(function () {
+    loader.style.opacity = "0";
+    document.body.style.overflow = "visible";
+  }, 600);
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 1100);
+  sessionStorage.setItem("load", "off");
+});
+
 // Window opener //
 
+btn1Mbl.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/info/", "_self");
+});
+
+btn1.addEventListener("click", () => {
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("/info/", "_self");
+});
+
 grid1.addEventListener("click", () => {
-  window.open("le_frejo", "_self");
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("le_frejo.html", "_self");
 });
 
 grid2.addEventListener("click", () => {
-  window.open("le_rivage", "_self");
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("le_rivage.html", "_self");
 });
 
 grid3.addEventListener("click", () => {
-  window.open("le_cabanis", "_self");
+  document.body.style.animation = "zoomOut 0.3s forwards";
+  window.open("le_cabanis.html", "_self");
 });
 
 // FAQ //
